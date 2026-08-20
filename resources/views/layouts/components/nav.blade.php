@@ -9,7 +9,7 @@
          :class="scrolled ? 'bg-ink/95 backdrop-blur-xl shadow-lg' : 'bg-gradient-to-b from-black/60 via-black/30 to-transparent'">
     </div>
 
-    <div class="relative max-w-[1440px] mx-auto px-6 lg:px-12">
+    <div class="relative z-[200] max-w-[1440px] mx-auto px-6 lg:px-12">
         <div class="flex items-center justify-between h-[72px]">
 
             {{-- Logo --}}
@@ -137,7 +137,7 @@
          x-transition:leave-start="opacity-100"
          x-transition:leave-end="opacity-0"
          class="lg:hidden fixed inset-0 top-[72px] bg-ink/98 backdrop-blur-2xl z-[100]">
-        <div class="flex flex-col items-center justify-center h-full gap-8 -mt-[72px]">
+        <div class="flex flex-col items-center justify-center h-full gap-8">
             @foreach($navItems as $item)
                 <a href="{{ route($item['route']) }}"
                    class="font-display text-3xl text-white/80 hover:text-orange transition-colors duration-300"

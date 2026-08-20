@@ -92,6 +92,12 @@
    ────────────────────────────────────────── */
 [x-cloak] { display: none !important; }
 
+/* Prevent horizontal scroll from reveal transforms while keeping sticky working */
+html, body {
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
 /* ──────────────────────────────────────────
    CINEMATIC PRELOADER
    ────────────────────────────────────────── */
