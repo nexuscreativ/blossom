@@ -1,0 +1,196 @@
+/* ──────────────────────────────────────────
+   BLOSSOM Admin Panel — Filament v4 Theme
+   Brand Colors: Onion #5B2C6F, Sean #2E7D32, Orange #E65100
+   ────────────────────────────────────────── */
+
+/* ─── BRAND CSS VARIABLES ────────────── */
+:root {
+    --color-primary-50: #f3e8f9;
+    --color-primary-100: #e1c4f0;
+    --color-primary-200: #c89ae3;
+    --color-primary-300: #ae6fd6;
+    --color-primary-400: #994fcb;
+    --color-primary-500: #5B2C6F;
+    --color-primary-600: #4e2560;
+    --color-primary-700: #3d1d4b;
+    --color-primary-800: #2d1538;
+    --color-primary-900: #1e0e26;
+}
+
+/* ─── SIDEBAR BRANDING ──────────────── */
+.fi-sidebar {
+    background: linear-gradient(180deg, #5B2C6F 0%, #3d1d4b 100%) !important;
+    border-right: none !important;
+}
+
+/* Sidebar active item */
+.fi-sidebar-item.fi-active > .fi-sidebar-item-btn {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.fi-sidebar-item.fi-active > .fi-sidebar-item-btn > .fi-icon {
+    color: #fff !important;
+}
+
+.fi-sidebar-item.fi-active > .fi-sidebar-item-btn > .fi-sidebar-item-label {
+    color: #fff !important;
+}
+
+/* Sidebar item labels */
+.fi-sidebar-item-label {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.fi-sidebar-item-btn:hover .fi-sidebar-item-label {
+    color: #fff !important;
+}
+
+.fi-sidebar-item-btn:hover > .fi-icon {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Sidebar section headings — target the navigation group label */
+.fi-sidebar-nav .fi-sidebar-nav-groups > .fi-sidebar-item-label {
+    color: rgba(255, 255, 255, 0.45) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.06em !important;
+    font-size: 0.65rem !important;
+    font-weight: 700 !important;
+}
+
+/* Sidebar logo */
+.fi-sidebar .fi-logo {
+    filter: brightness(0) invert(1);
+}
+
+/* Sidebar footer */
+.fi-sidebar-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Sidebar scrollbar */
+.fi-sidebar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.fi-sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.fi-sidebar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+/* ─── TOPBAR ────────────────────────── */
+.fi-topbar {
+    background: #fff !important;
+    border-bottom: 1px solid #e5e7eb !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* ─── PRIMARY BUTTONS ───────────────── */
+.fi-color-primary {
+    --color-50: var(--primary-50);
+    --color-100: var(--primary-100);
+    --color-200: var(--primary-200);
+    --color-300: var(--primary-300);
+    --color-400: var(--primary-400);
+    --color-500: var(--primary-500);
+    --color-600: var(--primary-600);
+    --color-700: var(--primary-700);
+    --color-800: var(--primary-800);
+    --color-900: var(--primary-900);
+    --color-950: var(--primary-950);
+}
+
+/* ─── FORM FOCUS STATES ─────────────── */
+.fi-input-wrp:focus-within,
+.fi-fo-input-wrp:focus-within {
+    border-color: #5B2C6F !important;
+    box-shadow: 0 0 0 3px rgba(91, 44, 111, 0.12) !important;
+}
+
+.fi-select input:focus-within,
+.fi-fo-select:focus-within {
+    border-color: #5B2C6F !important;
+    box-shadow: 0 0 0 3px rgba(91, 44, 111, 0.12) !important;
+}
+
+/* ─── TABLE ROW HOVER ───────────────── */
+.fi-table-body .fi-tbody-tr:hover,
+table tbody tr:hover {
+    background-color: rgba(91, 44, 111, 0.03) !important;
+}
+
+/* ─── LOGIN / SIMPLE LAYOUT PAGE ────── */
+.fi-simple-layout {
+    background: linear-gradient(135deg, #f8f4fc 0%, #e8f5e9 100%) !important;
+    min-height: 100vh;
+}
+
+.fi-simple-layout .fi-card,
+.fi-simple-main .fi-section {
+    border-radius: 1rem !important;
+    box-shadow: 0 25px 50px -12px rgba(91, 44, 111, 0.15) !important;
+    border: 1px solid rgba(91, 44, 111, 0.08) !important;
+}
+
+/* ─── SECTION / CARD BORDERS ────────── */
+.fi-section {
+    border-radius: 0.75rem !important;
+}
+
+/* ─── HEADER ────────────────────────── */
+.fi-header {
+    border-bottom: 1px solid #e5e7eb !important;
+}
+
+/* ─── GLOBAL SEARCH ─────────────────── */
+.fi-global-search-input:focus {
+    border-color: #5B2C6F !important;
+    box-shadow: 0 0 0 3px rgba(91, 44, 111, 0.1) !important;
+}
+
+/* ─── MOBILE SIDEBAR ────────────────── */
+@media (max-width: 1023px) {
+    .fi-sidebar {
+        background: linear-gradient(180deg, #5B2C6F 0%, #3d1d4b 100%) !important;
+    }
+}
+
+/* ─── BADGE COLORS ──────────────────── */
+.fi-color-info {
+    --color-50: #e8f0fe;
+    --color-100: #c2d9fa;
+    --color-500: #1565C0;
+    --color-600: #0d47a1;
+}
+
+.fi-color-success {
+    --color-50: #e8f5e9;
+    --color-100: #c8e6c9;
+    --color-500: #2E7D32;
+    --color-600: #1b5e20;
+}
+
+.fi-color-warning {
+    --color-50: #fff3e0;
+    --color-100: #ffe0b2;
+    --color-500: #E65100;
+    --color-600: #bf360c;
+}
+
+.fi-color-danger {
+    --color-50: #fde8e8;
+    --color-100: #fbd5d5;
+    --color-500: #DC2626;
+    --color-600: #b91c1c;
+}
+
+/* ─── WIDGET / DASHBOARD CARDS ──────── */
+.fi-widget-card,
+.fi-section {
+    border-radius: 0.75rem !important;
+    border: 1px solid #e5e7eb !important;
+}

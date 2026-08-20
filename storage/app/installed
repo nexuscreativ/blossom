@@ -1,0 +1,6 @@
+{
+    "installed_at": "2026-08-20T19:35:32+01:00",
+    "url": "http://127.0.0.1:8099",
+    "db_connection": "sqlite",
+    "admin_email": "admin@testmag.com"
+}
