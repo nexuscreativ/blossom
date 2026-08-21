@@ -14,7 +14,7 @@
                 </div>
                 <span class="font-display text-2xl font-bold text-onion tracking-tight">BLOSSOM</span>
             </a>
-            <p class="font-body text-secondary">Welcome back to Plateau's premier magazine.</p>
+            <p class="font-body text-secondary">Welcome back to BLOSSOM.</p>
         </div>
 
         {{-- Form Card --}}

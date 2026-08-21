@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Community')
-@section('metaDescription', 'Join the conversation. Share stories, connect with Plateau people, and build community.')
+@section('metaDescription', 'Join the conversation. Share stories, connect with fellow readers, and build community.')
 
 @section('content')
 
@@ -9,7 +9,7 @@
         <div class="max-w-2xl">
             <span class="font-ui text-xs font-semibold tracking-[0.15em] uppercase text-sean block mb-3">Community</span>
             <h1 class="font-display text-4xl md:text-5xl font-bold text-onion leading-tight mb-4">The BLOSSOM Network</h1>
-            <p class="font-body text-secondary text-lg">Connect with fellow Plateau enthusiasts. Share stories, debate ideas, and celebrate our heritage together.</p>
+            <p class="font-body text-secondary text-lg">Connect with fellow readers. Share stories, debate ideas, and celebrate culture together.</p>
         </div>
     </div>
 </section>

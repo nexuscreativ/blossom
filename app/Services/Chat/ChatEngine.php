@@ -280,13 +280,13 @@ class ChatEngine
 
         // Directory
         if ($matches(['directory', 'business', 'listing', 'find a', 'recommend'])) {
-            return 'Our directory lists trusted businesses around Plateau State. Visit the Listings page to browse by category.';
+            return 'Our directory lists trusted businesses across Nigeria. Visit the Listings page to browse by category.';
         }
 
         // About
         if ($matches(['about', 'who are you', 'what is this', 'what do you do'])) {
-            $tagline = $site['site.tagline'] ?? 'a premium magazine celebrating Plateau State';
-            return "{$name} is {$tagline}. We tell the stories of Plateau — its people, culture, and enterprise.";
+            $tagline = $site['site.tagline'] ?? 'a premium magazine with Nigerian soul';
+            return "{$name} is {$tagline}. We tell the stories of Nigeria — its people, culture, and enterprise.";
         }
 
         // Goodbye

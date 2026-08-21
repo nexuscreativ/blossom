@@ -18,7 +18,7 @@
                     <tr>
                         <td style="padding:32px;">
                             <h2 style="margin:0 0 16px;color:#5B2C6F;font-size:20px;">You're on the list!</h2>
-                            <p style="margin:0 0 16px;color:#3d3d3d;font-size:15px;line-height:1.7;">Thank you for subscribing to {{ $siteName }} ({{ $email }}). You'll receive the best stories, news, and insights from Plateau State.</p>
+                            <p style="margin:0 0 16px;color:#3d3d3d;font-size:15px;line-height:1.7;">Thank you for subscribing to {{ $siteName }} ({{ $email }}). You'll receive the best stories, news, and insights from BLOSSOM.</p>
                             <p style="margin:0;color:#999;font-size:13px;">You can unsubscribe at any time using the link in our emails.</p>
                         </td>
                     </tr>

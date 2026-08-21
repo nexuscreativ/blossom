@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Careers at BLOSSOM')
-@section('metaDescription', 'Join the BLOSSOM team — we\'re hiring storytellers, designers, and builders who love Plateau State.')
+@section('metaDescription', 'Join the BLOSSOM team — we\'re hiring storytellers, designers, and builders who love great journalism.')
 
 @section('content')
 

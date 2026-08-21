@@ -12,8 +12,8 @@ class SettingsSeeder extends Seeder
         $settings = [
             // ─── Site Settings ────────────────────────────
             ['group' => 'site', 'key' => 'site.name', 'value' => 'BLOSSOM Magazine', 'type' => 'text', 'label' => 'Site Name', 'is_public' => true],
-            ['group' => 'site', 'key' => 'site.tagline', 'value' => "Plateau's Prestige Magazine", 'type' => 'text', 'label' => 'Tagline', 'is_public' => true],
-            ['group' => 'site', 'key' => 'site.description', 'value' => 'Celebrating the people, culture, heritage, and achievements of Plateau State.', 'type' => 'text', 'label' => 'Description', 'is_public' => true],
+            ['group' => 'site', 'key' => 'site.tagline', 'value' => 'Global Stories, Nigerian Soul', 'type' => 'text', 'label' => 'Tagline', 'is_public' => true],
+            ['group' => 'site', 'key' => 'site.description', 'value' => 'Nigerian vibes, global reach, Plateau roots.', 'type' => 'text', 'label' => 'Description', 'is_public' => true],
             ['group' => 'site', 'key' => 'site.contact_email', 'value' => 'hello@blossom.ng', 'type' => 'text', 'label' => 'Contact Email', 'is_public' => true],
             ['group' => 'site', 'key' => 'site.contact_phone', 'value' => '+234 800 000 0000', 'type' => 'text', 'label' => 'Contact Phone', 'is_public' => true],
             ['group' => 'site', 'key' => 'site.contact_address', 'value' => 'Jos, Plateau State, Nigeria', 'type' => 'text', 'label' => 'Address', 'is_public' => true],
@@ -25,8 +25,8 @@ class SettingsSeeder extends Seeder
             ['group' => 'site', 'key' => 'site.social_linkedin', 'value' => 'https://linkedin.com/company/blossom', 'type' => 'text', 'label' => 'LinkedIn URL', 'is_public' => true],
 
             // ─── SEO Settings ─────────────────────────────
-            ['group' => 'seo', 'key' => 'seo.default_title', 'value' => "BLOSSOM — Plateau's Prestige Magazine", 'type' => 'text', 'label' => 'Default Title', 'is_public' => true],
-            ['group' => 'seo', 'key' => 'seo.default_description', 'value' => 'Celebrating the people, culture, heritage, and achievements of Plateau State.', 'type' => 'text', 'label' => 'Default Description', 'is_public' => true],
+            ['group' => 'seo', 'key' => 'seo.default_title', 'value' => 'BLOSSOM — Global Stories, Nigerian Soul', 'type' => 'text', 'label' => 'Default Title', 'is_public' => true],
+            ['group' => 'seo', 'key' => 'seo.default_description', 'value' => 'Nigerian vibes, global reach, Plateau roots.', 'type' => 'text', 'label' => 'Default Description', 'is_public' => true],
             ['group' => 'seo', 'key' => 'seo.google_analytics_id', 'value' => '', 'type' => 'text', 'label' => 'GA ID', 'is_public' => true],
             ['group' => 'seo', 'key' => 'seo.twitter_handle', 'value' => '@blossom_mag', 'type' => 'text', 'label' => 'Twitter Handle', 'is_public' => true],
 
@@ -51,12 +51,12 @@ class SettingsSeeder extends Seeder
             ]), 'type' => 'json', 'label' => 'Listing Tiers', 'is_public' => true],
 
             // ─── Featured Content ──────────────────────────
-            ['group' => 'featured', 'key' => 'featured.hero_title', 'value' => "The Remarkable Story of Plateau's Cultural Renaissance", 'type' => 'text', 'label' => 'Hero Title', 'is_public' => true],
-            ['group' => 'featured', 'key' => 'featured.hero_subtitle', 'value' => 'From the ancient rhythms of Nzem Berom to the modern art scene reshaping Jos, discover how Plateau State is writing its next chapter.', 'type' => 'text', 'label' => 'Hero Subtitle', 'is_public' => true],
+            ['group' => 'featured', 'key' => 'featured.hero_title', 'value' => 'Nigeria\'s Cultural Renaissance', 'type' => 'text', 'label' => 'Hero Title', 'is_public' => true],
+            ['group' => 'featured', 'key' => 'featured.hero_subtitle', 'value' => 'From ancient traditions to the modern art scene reshaping Lagos, Abuja, and Jos, discover how Nigeria is writing its next chapter.', 'type' => 'text', 'label' => 'Hero Subtitle', 'is_public' => true],
             ['group' => 'featured', 'key' => 'featured.hero_category', 'value' => 'Culture & Heritage', 'type' => 'text', 'label' => 'Hero Category', 'is_public' => true],
             ['group' => 'featured', 'key' => 'featured.hero_author', 'value' => 'Amina Bello', 'type' => 'text', 'label' => 'Hero Author', 'is_public' => true],
             ['group' => 'featured', 'key' => 'featured.hero_read_time', 'value' => '8 min', 'type' => 'text', 'label' => 'Hero Read Time', 'is_public' => true],
-            ['group' => 'featured', 'key' => 'featured.cta_title', 'value' => 'Stay Connected to Plateau', 'type' => 'text', 'label' => 'CTA Title', 'is_public' => true],
+            ['group' => 'featured', 'key' => 'featured.cta_title', 'value' => 'Stay Connected to BLOSSOM', 'type' => 'text', 'label' => 'CTA Title', 'is_public' => true],
             ['group' => 'featured', 'key' => 'featured.cta_subtitle', 'value' => 'Get the best stories, news, and insights from BLOSSOM delivered to your inbox every week.', 'type' => 'text', 'label' => 'CTA Subtitle', 'is_public' => true],
             ['group' => 'featured', 'key' => 'featured.stats', 'value' => json_encode([
                 ['value' => '500+', 'label' => 'Articles Published'],
@@ -66,12 +66,12 @@ class SettingsSeeder extends Seeder
             ]), 'type' => 'json', 'label' => 'Stats', 'is_public' => true],
 
             // ─── About Page ────────────────────────────────
-            ['group' => 'page', 'key' => 'page.about.mission_text', 'value' => "Founded in 2024, BLOSSOM Magazine was born from a simple belief: Plateau State has stories worth telling — stories of resilience, innovation, culture, and beauty that deserve a premium platform.", 'type' => 'text', 'label' => 'Mission Text', 'is_public' => true],
-            ['group' => 'page', 'key' => 'page.about.founding_story', 'value' => 'We are a team of journalists, designers, and storytellers united by our love for the Jos Plateau and our commitment to showcasing its best to the world.', 'type' => 'text', 'label' => 'Founding Story', 'is_public' => true],
+            ['group' => 'page', 'key' => 'page.about.mission_text', 'value' => 'Founded in 2024, BLOSSOM Magazine was born from a simple belief: Nigeria has stories worth telling — stories of resilience, innovation, culture, and beauty that deserve a premium platform. From our home on the Plateau, we tell Nigeria\'s stories to the world.', 'type' => 'text', 'label' => 'Mission Text', 'is_public' => true],
+            ['group' => 'page', 'key' => 'page.about.founding_story', 'value' => 'We are a team of journalists, designers, and storytellers united by our commitment to showcasing Nigeria\'s best to the world — with deep roots in the Plateau.', 'type' => 'text', 'label' => 'Founding Story', 'is_public' => true],
             ['group' => 'page', 'key' => 'page.about.values', 'value' => json_encode([
                 ['title' => 'Authenticity', 'description' => 'Every story we tell is rooted in truth.'],
                 ['title' => 'Excellence', 'description' => 'Premium storytelling meets premium design.'],
-                ['title' => 'Community', 'description' => 'We exist to connect Plateau people everywhere.'],
+                ['title' => 'Community', 'description' => 'We exist to connect Nigerian people everywhere.'],
             ]), 'type' => 'json', 'label' => 'Values', 'is_public' => true],
             ['group' => 'page', 'key' => 'page.about.team_members', 'value' => json_encode([
                 ['name' => 'Dung Gyang', 'role' => 'Editor-in-Chief'],

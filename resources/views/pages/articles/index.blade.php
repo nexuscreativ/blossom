@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Articles')
-@section('metaDescription', 'Read the latest articles on lifestyle, culture, business, and community from Plateau State.')
+@section('metaDescription', 'Read the latest articles on lifestyle, culture, business, and community from Nigeria and beyond.')
 
 @section('content')
 
@@ -13,7 +13,7 @@
                 Latest Stories
             </h1>
             <p class="font-body text-secondary text-lg">
-                In-depth reporting, compelling features, and inspiring stories from across Plateau State.
+                In-depth reporting, compelling features, and inspiring stories from across Nigeria.
             </p>
         </div>
     </div>

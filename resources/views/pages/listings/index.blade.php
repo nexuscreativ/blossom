@@ -8,8 +8,8 @@
     <div class="container-blossom">
         <div class="max-w-2xl">
             <span class="font-ui text-xs font-semibold tracking-[0.15em] uppercase text-gold block mb-3">Directory</span>
-            <h1 class="font-display text-4xl md:text-5xl font-bold text-onion leading-tight mb-4">Plateau's Finest</h1>
-            <p class="font-body text-secondary text-lg">Discover the best businesses, personalities, and institutions across Plateau State.</p>
+            <h1 class="font-display text-4xl md:text-5xl font-bold text-onion leading-tight mb-4">Nigeria's Finest</h1>
+            <p class="font-body text-secondary text-lg">Discover the best businesses, personalities, and institutions across Nigeria.</p>
         </div>
     </div>
 </section>
@@ -69,7 +69,7 @@
 <section class="py-16 bg-ink text-center">
     <div class="container-blossom">
         <h2 class="font-display text-2xl md:text-3xl font-bold text-white mb-4">Get Your Business Listed</h2>
-        <p class="font-body text-white/50 mb-8 max-w-md mx-auto">Join Plateau's premier business directory. Standard listings are free; featured listings start at ₦15,000/month.</p>
+        <p class="font-body text-white/50 mb-8 max-w-md mx-auto">Join Nigeria's premier business directory. Standard listings are free; featured listings start at ₦15,000/month.</p>
         <a href="{{ route('contact') }}" class="btn-primary">Submit Your Listing</a>
     </div>
 </section>

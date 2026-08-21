@@ -1,7 +1,7 @@
 {
   "name": "blossom",
   "version": "1.0.0",
-  "description": "BLOSSOM — Plateau's Prestige Magazine",
+  "description": "BLOSSOM — Global Stories, Nigerian Soul",
   "private": true,
   "scripts": {
     "dev": "npx @tailwindcss/cli -i resources/css/app.css -o public/assets/css/blossom.css --watch",

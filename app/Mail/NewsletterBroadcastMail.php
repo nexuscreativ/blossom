@@ -58,7 +58,7 @@ class NewsletterBroadcastMail extends Mailable
                     <tr>
                         <td style="background:linear-gradient(135deg,#2A1433,#3D1E4A);padding:40px 48px;text-align:center;">
                             <h1 style="margin:0;color:#FFFFFF;font-size:28px;font-weight:700;letter-spacing:2px;">BLOSSOM</h1>
-                            <p style="margin:8px 0 0;color:rgba(255,255,255,0.5);font-size:12px;letter-spacing:3px;text-transform:uppercase;">Plateau's Prestige Magazine</p>
+                            <p style="margin:8px 0 0;color:rgba(255,255,255,0.5);font-size:12px;letter-spacing:3px;text-transform:uppercase;">Global Stories, Nigerian Soul</p>
                         </td>
                     </tr>
                     <!-- Greeting -->

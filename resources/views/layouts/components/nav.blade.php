@@ -20,7 +20,7 @@
                 <div class="hidden sm:block">
                     <div class="font-display text-white text-xl font-bold tracking-wider leading-none">{{ setting('site.site.name', 'BLOSSOM') }}</div>
                     <div class="font-ui text-[10px] tracking-[0.25em] uppercase mt-0.5"
-                         :class="scrolled ? 'text-ash' : 'text-white/60'">{{ setting('site.site.tagline', "Plateau's Prestige") }}</div>
+                         :class="scrolled ? 'text-ash' : 'text-white/60'">{{ setting('site.site.tagline', "Global Stories, Nigerian Soul") }}</div>
                 </div>
             </a>
 
@@ -29,6 +29,7 @@
                 @php
                     $navItems = [
                         ['label' => 'Blog', 'route' => 'articles.index'],
+                        ['label' => 'News', 'route' => 'news.index', 'cta' => true],
                         ['label' => 'Events', 'route' => 'events.index'],
                         ['label' => 'Listings', 'route' => 'listings.index'],
                         ['label' => 'Community', 'route' => 'community.index'],
@@ -38,10 +39,12 @@
                 @foreach($navItems as $item)
                     <a href="{{ route($item['route']) }}"
                        class="font-ui text-sm font-medium tracking-wide transition-all duration-300 relative group
-                              {{ request()->routeIs($item['route']) ? 'text-orange' : 'text-white/80 hover:text-white' }}">
+                              {{ !empty($item['cta']) ? 'text-orange font-semibold' : (request()->routeIs($item['route']) ? 'text-orange' : 'text-white/80 hover:text-white') }}">
                         {{ $item['label'] }}
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange transition-all duration-300 group-hover:w-full"
-                              {{ request()->routeIs($item['route']) ? 'style="width: 100%"' : '' }}></span>
+                        @if(empty($item['cta']))
+                            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange transition-all duration-300 group-hover:w-full"
+                                  {{ request()->routeIs($item['route']) ? 'style="width: 100%"' : '' }}></span>
+                        @endif
                     </a>
                 @endforeach
             </div>

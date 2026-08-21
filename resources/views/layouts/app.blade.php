@@ -1,7 +1,7 @@
 @php
     $siteName = setting('site.site.name', 'BLOSSOM');
-    $siteTagline = setting('site.site.tagline', "Plateau's Prestige Magazine");
-    $siteDescription = setting('seo.seo.default_description', 'Celebrating the people, culture, heritage, and achievements of Plateau State.');
+    $siteTagline = setting('site.site.tagline', 'Global Stories, Nigerian Soul');
+    $siteDescription = setting('seo.seo.default_description', 'Nigerian vibes, global reach, Plateau roots.');
     $gaId = setting('seo.seo.google_analytics_id', '');
     $twitterHandle = setting('seo.seo.twitter_handle', '@blossom_mag');
 @endphp

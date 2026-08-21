@@ -1,7 +1,7 @@
 {
     "name": "blossom/plateau-magazine",
     "type": "project",
-    "description": "BLOSSOM Magazine — Plateau's Prestige Digital Magazine",
+    "description": "BLOSSOM Magazine — Global Stories, Nigerian Soul",
     "keywords": ["laravel", "magazine", "plateau"],
     "license": "proprietary",
     "require": {

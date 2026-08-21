@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', setting('site.site.name', 'BLOSSOM'))
-@section('metaDescription', 'Celebrating the people, culture, heritage, and achievements of Plateau State. Your premier source for lifestyle, business, and community stories.')
+@section('metaDescription', 'Nigerian vibes, global reach, Plateau roots. Your premier source for lifestyle, business, and community stories.')
 
 @section('content')
 

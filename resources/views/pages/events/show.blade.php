@@ -55,7 +55,7 @@
                     <p>
                         BLOSSOM Magazine brings you the most anticipated gatherings on the Plateau. This {{ strtolower($event['type']) }}
                         is a highlight of the 2026 calendar, drawing residents and visitors from across Nigeria to celebrate
-                        the culture, talent, and energy of Plateau State.
+                        the culture, talent, and energy of Nigeria.
                     </p>
                     <p>
                         Full details — including the programme of activities, ticketing, and accommodation options — will be

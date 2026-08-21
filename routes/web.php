@@ -10,6 +10,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\InstallController;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\ChatWebhookController;
+use App\Http\Controllers\AggregatedNewsController;
 
 // Chat widget (public)
 Route::get('/chat/session', [ChatController::class, 'session'])->name('chat.session');
@@ -30,6 +31,8 @@ Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/articles', [PageController::class, 'articlesIndex'])->name('articles.index');
 Route::get('/articles/{slug}', [PageController::class, 'articleShow'])->name('articles.show');
+Route::get('/news', [AggregatedNewsController::class, 'index'])->name('news.index');
+Route::get('/news/{slug}', [AggregatedNewsController::class, 'show'])->name('news.show');
 Route::get('/events', [PageController::class, 'eventsIndex'])->name('events.index');
 Route::get('/events/{slug}', [PageController::class, 'eventShow'])->name('events.show');
 Route::get('/listings', [PageController::class, 'listingsIndex'])->name('listings.index');

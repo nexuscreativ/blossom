@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Create Account')
-@section('metaDescription', 'Create your BLOSSOM account and join the Plateau community.')
+@section('metaDescription', 'Create your BLOSSOM account and join the community.')
 
 @section('content')
 
@@ -14,7 +14,7 @@
                 </div>
                 <span class="font-display text-2xl font-bold text-onion tracking-tight">BLOSSOM</span>
             </a>
-            <p class="font-body text-secondary">Join Plateau's most vibrant community.</p>
+            <p class="font-body text-secondary">Join Nigeria's most vibrant community.</p>
         </div>
 
         {{-- Form Card --}}

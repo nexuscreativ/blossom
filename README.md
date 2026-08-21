@@ -1,6 +1,6 @@
-# BLOSSOM — Plateau's Prestige Magazine
+# BLOSSOM — Global Stories, Nigerian Soul
 
-> Celebrating the people, culture, heritage, and achievements of Plateau State, Nigeria.
+> Nigerian vibes, global reach, Plateau roots.
 
 BLOSSOM is a production-ready digital magazine platform built with **Laravel 11**, **Filament 3 (v4)**, **Livewire 3**, and **Tailwind CSS 4**. It ships with a **zero-configuration web installer**, a full editorial content system, subscription billing, a newsletter engine, a community feed, and an **AI support chatbot with human-in-the-loop (HITL) escalation** across the web, WhatsApp, Telegram, and voice.
 

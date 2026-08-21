@@ -22,7 +22,7 @@
         {{-- Subscribe Form --}}
         <div class="bg-white rounded-2xl p-8 md:p-10 shadow-xl shadow-onion/5 border border-silver reveal">
             <h2 class="font-display text-2xl font-bold text-onion mb-2 text-center">Subscribe Free</h2>
-            <p class="font-body text-secondary text-sm text-center mb-6">Join 4,500+ Plateau enthusiasts who read BLOSSOM every week.</p>
+            <p class="font-body text-secondary text-sm text-center mb-6">Join 4,500+ readers who get BLOSSOM every week.</p>
             <livewire:newsletter-subscribe />
             <p class="font-ui text-xs text-muted text-center mt-4">No spam. Unsubscribe anytime.</p>
         </div>

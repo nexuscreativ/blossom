@@ -9,7 +9,7 @@
         <div class="max-w-2xl">
             <span class="font-ui text-xs font-semibold tracking-[0.15em] uppercase text-sean block mb-3">Calendar</span>
             <h1 class="font-display text-4xl md:text-5xl font-bold text-onion leading-tight mb-4">Events</h1>
-            <p class="font-body text-secondary text-lg">Festivals, conferences, exhibitions, and gatherings across Plateau State.</p>
+            <p class="font-body text-secondary text-lg">Festivals, conferences, exhibitions, and gatherings across Nigeria.</p>
         </div>
     </div>
 </section>

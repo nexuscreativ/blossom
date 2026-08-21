@@ -52,7 +52,7 @@
                     <p>
                         {{ $listing['name'] }} is one of the standout {{ strtolower($listing['type']) }} entries in
                         the BLOSSOM directory — a curated showcase of the businesses, personalities, and institutions
-                        that make Plateau State exceptional.
+                        that make Nigeria exceptional.
                     </p>
                     <p>
                         Listings are independently vetted by the BLOSSOM editorial team to ensure every entry reflects
@@ -84,7 +84,7 @@
 
                 <div class="rounded-2xl bg-gradient-to-br from-onion to-onion-deep p-6 text-white">
                     <h3 class="font-display text-lg font-bold mb-2">Get Your Business Listed</h3>
-                    <p class="font-body text-sm text-white/60 mb-4">Join Plateau's premier directory. Featured listings start at ₦15,000/month.</p>
+                    <p class="font-body text-sm text-white/60 mb-4">Join Nigeria's premier directory. Featured listings start at ₦15,000/month.</p>
                     <a href="{{ route('contact') }}" class="btn-primary bg-orange hover:bg-orange-deep w-full text-center text-sm block py-3">Submit Your Listing</a>
                 </div>
             </aside>

@@ -70,7 +70,7 @@ class ListingResource extends Resource
                             ->default('Jos'),
                         Forms\Components\TextInput::make('state')
                             ->maxLength(255)
-                            ->default('Plateau'),
+                            ->default('Nigeria'),
                     ]),
 
                 \Filament\Schemas\Components\Section::make('Settings')

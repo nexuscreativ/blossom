@@ -26,8 +26,8 @@
             <h2 class="font-display text-3xl font-bold text-onion leading-tight mb-6">Who We Are</h2>
             <div class="space-y-4 font-body text-lg text-secondary leading-relaxed">
                 <p>
-                    BLOSSOM is Plateau State's prestige magazine — a premium platform documenting and celebrating the
-                    people, heritage, culture, institutions, and achievements of Plateau State, Nigeria.
+                    BLOSSOM is a global digital magazine with Nigerian soul — a premium platform documenting and celebrating
+                    the people, heritage, culture, institutions, and achievements of Nigeria, with deep roots in Plateau State.
                 </p>
                 <p>
                     Founded in 2024 by Emerald Colours Nigeria Limited, BLOSSOM publishes curated articles, event

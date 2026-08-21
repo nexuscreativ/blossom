@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'About Us')
-@section('metaDescription', 'Learn about BLOSSOM — Plateau\'s Prestige Magazine. Our mission, values, and the team behind the stories.')
+@section('metaDescription', 'Learn about BLOSSOM — Global Stories, Nigerian Soul. Our mission, values, and the team behind the stories.')
 
 @section('content')
 
@@ -10,10 +10,10 @@
     <div class="container-blossom relative z-10 text-center">
         <span class="font-ui text-xs font-semibold tracking-[0.15em] uppercase text-orange block mb-4">Our Story</span>
         <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            Plateau, Our Home — <span class="text-gradient-orange">Our Pride</span>
+            Global Stories, <span class="text-gradient-orange">Nigerian Soul</span>
         </h1>
         <p class="font-body text-lg text-white/50 max-w-2xl mx-auto">
-            BLOSSOM is more than a magazine. It's a love letter to Plateau State — its people, its culture, its resilience, and its future.
+            BLOSSOM is more than a magazine. It's a love letter to Nigeria — its people, its culture, its resilience, and its future, with deep roots on the Plateau.
         </p>
     </div>
 </section>
@@ -25,17 +25,17 @@
             <div class="reveal">
                 <span class="font-ui text-xs font-semibold tracking-[0.15em] uppercase text-onion block mb-3">Who We Are</span>
                 <h2 class="font-display text-3xl md:text-4xl font-bold text-onion leading-tight mb-6">
-                    Stories That Define Plateau
+                    Stories That Define Nigeria
                 </h2>
                 <div class="space-y-4 font-body text-secondary leading-relaxed">
                     <p>
-                        Founded in 2024, BLOSSOM Magazine was born from a simple belief: Plateau State has stories worth telling — stories of resilience, innovation, culture, and beauty that deserve a premium platform.
+                        Founded in 2024, BLOSSOM Magazine was born from a simple belief: Nigeria has stories worth telling — stories of resilience, innovation, culture, and beauty that deserve a premium platform. From our home on the Plateau, we tell Nigeria's stories to the world.
                     </p>
                     <p>
-                        We are a team of journalists, designers, and storytellers united by our love for the Jos Plateau and our commitment to showcasing its best to the world.
+                        We are a team of journalists, designers, and storytellers united by our commitment to showcasing Nigeria's best to the world — with deep roots in the Plateau.
                     </p>
                     <p>
-                        From the cool hills of Shere to the bustling markets of Jos, from ancient Berom traditions to cutting-edge tech startups, BLOSSOM captures the full spectrum of life on the Plateau.
+                        From the cool hills of Shere to the bustling markets of Jos, from ancient traditions to cutting-edge tech startups, BLOSSOM captures the full spectrum of Nigerian life.
                     </p>
                 </div>
             </div>
@@ -59,9 +59,9 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 stagger-children">
             @php
                 $values = [
-                    ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/>', 'title' => 'Authenticity', 'desc' => 'Every story we tell is rooted in truth. We celebrate Plateau as it is — complex, vibrant, and real.'],
+                    ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/>', 'title' => 'Authenticity', 'desc' => 'Every story we tell is rooted in truth. We celebrate Nigeria as it is — complex, vibrant, and real.'],
                     ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/>', 'title' => 'Excellence', 'desc' => 'Premium storytelling meets premium design. We hold ourselves to the highest standards in everything we publish.'],
-                    ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/>', 'title' => 'Community', 'desc' => 'We exist to connect Plateau people everywhere. Our platform brings together voices, ideas, and shared heritage.'],
+                    ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/>', 'title' => 'Community', 'desc' => 'We exist to connect Nigerian people everywhere. Our platform brings together voices, ideas, and shared heritage.'],
                 ];
             @endphp
             @foreach($values as $value)

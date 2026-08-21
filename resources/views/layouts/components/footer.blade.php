@@ -11,11 +11,10 @@
             <div class="lg:col-span-2">
                 <a href="{{ route('home') }}" class="inline-block mb-6">
                     <img src="{{ asset('assets/blossom-logo.png') }}" alt="BLOSSOM Logo" class="h-12 w-auto mb-2">
-                    <div class="font-ui text-xs tracking-[0.3em] uppercase text-ash mt-1">{{ setting('site.site.tagline', "Plateau's Prestige Magazine") }}</div>
+                    <div class="font-ui text-xs tracking-[0.3em] uppercase text-ash mt-1">{{ setting('site.site.tagline', 'Global Stories, Nigerian Soul') }}</div>
                 </a>
                 <p class="font-body text-sm leading-relaxed text-white/50 max-w-sm mb-8">
-                    Documenting and celebrating the people, heritage, culture, institutions, and achievements of Plateau State.
-                    "Plateau, Our Home — Our Pride."
+                    Nigerian vibes, global reach, Plateau roots. A premium digital magazine telling Nigeria's stories to the world.
                 </p>
 
                 {{-- Newsletter Mini --}}
@@ -106,7 +105,7 @@
                 {!! setting('site.site.copyright_text', '© ' . date('Y') . ' ' . setting('site.site.company_name', 'Emerald Colours Nigeria Limited') . '. All rights reserved.') !!}
             </p>
             <p class="font-ui text-xs text-white/30">
-                Made with pride in Plateau State, Nigeria.
+                Made with pride in Nigeria.
             </p>
         </div>
     </div>

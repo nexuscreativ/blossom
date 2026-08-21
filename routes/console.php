@@ -2,4 +2,4 @@
 
 use Illuminate\Support\Facades\Schedule;
 
-// Schedule::command('inspire')->hourly();
+Schedule::command('news:fetch')->hourly();

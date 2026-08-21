@@ -46,7 +46,7 @@
             </div>
 
             <h3 class="font-display text-2xl md:text-3xl font-bold text-white mb-3">
-                {{ setting('featured.featured.cta_title', 'Stay Connected to Plateau') }}
+                {{ setting('featured.featured.cta_title', 'Stay Connected to BLOSSOM') }}
             </h3>
             <p class="font-body text-white/50 text-sm mb-8 max-w-sm mx-auto">
                 {{ setting('featured.featured.cta_subtitle', 'Get the best stories, news, and insights from BLOSSOM delivered to your inbox every week.') }}
