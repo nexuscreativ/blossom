@@ -45,7 +45,9 @@ class AggregatorService
                 'language' => $source->language,
             ]),
             'guardian' => $this->guardianService->fetchMultiple($source->categories, [
-                'page_size' => 10,
+                'page_size' => 15,
+                'tag' => $source->settings['tag'] ?? null,
+                'q' => $source->settings['query'] ?? null,
             ]),
             default => collect(),
         };

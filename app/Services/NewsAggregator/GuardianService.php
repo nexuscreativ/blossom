@@ -19,15 +19,28 @@ class GuardianService
     public function fetch(string $section, array $config = []): Collection
     {
         $pageSize = $config['page_size'] ?? 10;
+        $tag = $config['tag'] ?? null;
+        $query = $config['q'] ?? null;
 
         try {
-            $response = Http::timeout(30)->get("{$this->baseUrl}/search", [
+            $params = [
                 'api-key' => $this->apiKey,
-                'section' => $section,
                 'show-fields' => 'all',
                 'page-size' => $pageSize,
                 'order-by' => 'newest',
-            ]);
+            ];
+
+            if ($tag) {
+                $params['tag'] = $tag;
+            } elseif ($query) {
+                $params['q'] = $query;
+            }
+
+            if (! $tag && ! $query) {
+                $params['section'] = $section;
+            }
+
+            $response = Http::timeout(30)->get("{$this->baseUrl}/search", $params);
 
             if (! $response->successful()) {
                 Log::warning("Guardian API error: {$response->status()} for section {$section}");
@@ -52,7 +65,7 @@ class GuardianService
             usleep(250000);
         }
 
-        return $articles;
+        return $articles->unique('source_url');
     }
 
     protected function parseResponse(array $data): Collection
@@ -83,15 +96,17 @@ class GuardianService
 
     protected function mapSection(string $section): string
     {
-        return match (strtolower($section)) {
-            'business' => 'business',
-            'technology', 'science', 'environment' => 'technology',
-            'culture', 'film', 'music', 'books', 'artanddesign', 'stage', 'tv-and-radio' => 'culture',
-            'lifeandstyle' => 'lifestyle',
-            'football', 'sport', 'cricket', 'tennis', 'rugby-union', 'formula-one', 'cycling', 'boxing', 'golf', 'athletics', 'swimming' => 'sports',
-            'world', 'uk-news', 'us-news', 'australia-news', 'africa', 'asia-pacific', 'europe-news', 'latin-america', 'middle-east' => 'politics',
-            'society', 'education', 'media', 'law', 'politics' => 'politics',
-            default => 'general',
+        $s = strtolower(trim($section));
+
+        return match (true) {
+            $s === 'business' => 'Business',
+            in_array($s, ['technology', 'science', 'environment', 'green', 'environment/climate-crisis']) => 'Technology',
+            in_array($s, ['culture', 'film', 'music', 'books', 'artanddesign', 'art and design', 'stage', 'tv-and-radio', 'tv and radio']) => 'Culture & Heritage',
+            in_array($s, ['lifeandstyle', 'life and style', 'fashion', 'food', 'travel']) => 'Lifestyle',
+            in_array($s, ['football', 'sport', 'cricket', 'tennis', 'rugby-union', 'rugby union', 'formula-one', 'formula one', 'cycling', 'boxing', 'golf', 'athletics', 'swimming']) => 'Sports',
+            in_array($s, ['world', 'world/africa', 'world news', 'africa', 'uk-news', 'uk news', 'us-news', 'us news', 'australia-news', 'asia-pacific', 'europe-news', 'latin-america', 'middle-east', 'middle east']) => 'Politics & Governance',
+            in_array($s, ['society', 'education', 'media', 'law', 'politics', 'global-development', 'global development', 'opinion']) => 'Politics & Governance',
+            default => 'General',
         };
     }
 
